@@ -3,7 +3,7 @@
  * Plugin Name: Photo Private Gallery
  * Description: Adds paid, per-listing access controls for Directorist private galleries.
  * Version: 0.4.1
- * Author: SovWare
+ * Author: Developer
  * Text Domain: photo-private-gallery
  * Requires at least: 6.5
  * Requires PHP: 7.4
