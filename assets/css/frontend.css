@@ -1,0 +1,143 @@
+.ppg-locked-gallery {
+	position: relative;
+	overflow: hidden;
+	min-height: 260px;
+	border-radius: 6px;
+	background: #eef1f6;
+}
+
+.ppg-locked-gallery__content {
+	filter: blur(14px);
+	transform: scale(1.035);
+	pointer-events: none;
+	user-select: none;
+}
+
+.ppg-locked-gallery__overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 14px;
+	padding: 24px;
+	background: rgba(19, 27, 45, 0.32);
+	text-align: center;
+}
+
+.ppg-locked-gallery__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.94);
+	font-size: 24px;
+	line-height: 1;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.ppg-locked-gallery__button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 520px;
+	min-height: 48px;
+	padding: 12px 24px;
+	border-radius: 5px;
+	background: #315bea;
+	color: #fff !important;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.4;
+	text-decoration: none !important;
+	box-shadow: 0 8px 22px rgba(21, 45, 120, 0.28);
+	transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.ppg-locked-gallery__button:hover,
+.ppg-locked-gallery__button:focus {
+	background: #2146c7;
+	color: #fff !important;
+	transform: translateY(-1px);
+}
+
+@media (max-width: 575px) {
+	.ppg-locked-gallery {
+		min-height: 220px;
+	}
+
+	.ppg-locked-gallery__button {
+		width: 100%;
+		padding-right: 16px;
+		padding-left: 16px;
+		font-size: 14px;
+	}
+}
+
+.ppg-dashboard {
+	padding: 4px 0 24px;
+}
+
+.ppg-dashboard__header {
+	margin-bottom: 24px;
+}
+
+.ppg-dashboard__header h3 {
+	margin: 0 0 7px;
+}
+
+.ppg-dashboard__header p,
+.ppg-dashboard-card__body p {
+	margin: 0;
+	color: #6b7280;
+}
+
+.ppg-dashboard__empty {
+	padding: 32px;
+	border: 1px solid #e4e7ec;
+	border-radius: 8px;
+	background: #f8f9fb;
+	text-align: center;
+}
+
+.ppg-dashboard__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 360px));
+	gap: 20px;
+}
+
+.ppg-dashboard-card {
+	overflow: hidden;
+	border: 1px solid #e4e7ec;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.ppg-dashboard-card__image {
+	display: block;
+	aspect-ratio: 16 / 10;
+	background: #eef1f6;
+}
+
+.ppg-dashboard-card__image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.ppg-dashboard-card__body {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 20px;
+}
+
+.ppg-dashboard-card__body h4 {
+	margin: 0;
+}
